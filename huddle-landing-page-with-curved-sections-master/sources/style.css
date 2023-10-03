@@ -1,0 +1,79 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 5vh;
+}
+.header_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header_navbar_image {
+  width: 80%;
+}
+.header_navbar_image_logo {
+  width: 20%;
+}
+.header_navbar_button {
+  width: 12%;
+  border-radius: 50px;
+  border: 2px solid hsl(321, 100%, 78%);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: hsl(321, 100%, 78%);
+  background-color: white;
+}
+.header_block_title {
+  font-family: "Poppins", sans-serif;
+  margin-top: 15vh;
+  font-size: 35px;
+  text-align: center;
+}
+.header_block_p {
+  width: 38%;
+  margin-top: 5vh;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.header_block_button {
+  margin-top: 5vh;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  text-align: center;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+
+.main {
+  width: 100%;
+}
+.main_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
