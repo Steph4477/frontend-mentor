@@ -89,41 +89,43 @@ p {
 }
 
 .main {
-    &_article {
+    &_article{
         margin-top: 5vh;
         display: flex;
-        justify-content: space-between;
-        width: 100%;
+        align-items: center;
     }
 
     &_collumn {
         img {
             max-width: 100%;
         }
-    }
 
-    &_article {    
-        margin-top: -1vh;
-        display: flex;
-        align-items: center;
-        background-color: $Pale-Blue;
-
-        &_text_content {
-            width: 60%;
+        &_article {
+            margin-top: -1vh;
             display: flex;
-            flex-wrap: wrap;
-            h3,
-            p {
-                text-align: left;
-                width: 80%;
+            align-items: center;
+            background-color: $Pale-Blue;
+            &.no-background {
+                background-color: transparent; 
+              }
+            &_text_content {
+                width: 60%;
+                display: flex;
+                flex-wrap: wrap;
+                h3,
+                p {
+                    text-align: left;
+                    width: 80%;
+                }
             }
-        }
 
-        &_image {
-            width: 40%;
-            display: flex;
-            img {
-                max-width: 70%;
+            &_image {
+                width: 40%;
+                display: flex;
+
+                img {
+                    max-width: 70%;
+                }
             }
         }
     }
