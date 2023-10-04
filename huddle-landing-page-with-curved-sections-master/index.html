@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <!-- font title -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,40 +18,42 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./sources/style.css">
+  <!-- bibli awesome icone-->
+  <script src="https://kit.fontawesome.com/7bbbf8beb9.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
 
-<body>
+<body class="body">
   <header class="header">
 
     <section class="header_navbar">
-      <h1 class="header_navbar_image">
-        <img src="/images/logo.svg" alt="Logo du site Huddle" class="header_navbar_image_logo">
-      </h1>
+      <img src="/images/logo.svg" alt="Logo du site Huddle" class="header_navbar_image_logo" />
+
       <button class="header_navbar_button">
-
         Try It Free
-
       </button>
     </section>
 
     <section class="block">
-      <h1 class="block_title">
+      <h2 class="block_title">
         Build The Community Your Fans Will Love
-      </h1>
+      </h2>
       <p class="block_p">
         Huddle re-imagines the way we build communities. You have a voice, but so does
         your audience. Create connections with your users as you engage in genuine discussion.
       </p>
-      <button class="block_button">
-        Get Started For Free
-      </button>
+      <div class="block_b">
+        <button class="block_b_button">
+          Get Started For Free
+        </button>
+      </div>
     </section>
 
   </header>
   <main>
-    <img src="./images/screen-mockups.svg" alt="illustration montrant responsive design en cours de chargement"
-      class="imgDisplay" />
+    <div class="main_image">
+      <img src="./images/screen-mockups.svg" alt="illustration montrant responsive design en cours de chargement" />
+    </div>
     <section class="main_article">
       <article class="main_article_icone">
         <img src="./images/icon-communities.svg" alt="icone communauté" />
@@ -95,11 +98,11 @@
             just-in-time loading for a more natural flow.
 
           </p>
-          
+
         </div>
       </article>
 
-      <img src="./images/bg-section-top-desktop-1.svg">
+      <img src="./images/bg-section-top-desktop-1.svg" />
 
       <article class="main_collumn_article">
         <div class="main_collumn_article_text_content">
@@ -119,48 +122,79 @@
     </section>
     <section class="block">
       <h1 class="block_title">
-         Ready To Build Your Community?
+        Ready To Build Your Community?
       </h1>
-      
-      <button class="block_button">
-        Get Started For Free
-      </button>
+
+      <div class="block_b">
+        <button class="block_b_button">
+          Get Started For Free
+        </button>
+      </div>
     </section>
   </main>
 
+  <div class="wave">
+    <img src="./images/bg-footer-top-desktop.svg" />
+  </div>
 
 
+  <footer class="footer">
+    <div class="footer_container">
+      <section class="footer_container_huddle">
+        <div class="footer_container_huddle_img">
+          <img src="./images/logoB.svg" alt="image du logo" />
+        </div>
+        <p class="footer_container_huddle_p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+          vestibulum a, ultrices quis sem.
+        </p>
+        <div class="footer_container_huddle_phone">
+          <img src="./images/icon-phone.svg" />
+          <a href="tel: +1-543-123-4567">Phone: +1-543-123-4567</a>
+        </div>
+        <div class="footer_container_huddle_mail">
+          <img src="./images/icon-email.svg" />
+          <a href="mailto:example@huddle.com">example@huddle.com</a>
+        </div>
+        <div class="footer_container_huddle_RS">
+          <span>
+            <i class="fa-brands fa-square-facebook"></i>
+          </span>
+          <span>
+            <i class="fa-brands fa-square-instagram"></i>
+          </span>
+          <span>
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </span>
+        </div>
 
-
-
-
-
-
-
-
-
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
-  vestibulum a, ultrices quis sem.
-
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-  send you spam or pass on your email address
-
-  Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+      </section>
+      <section class="footer_container_newsletter">
+        <h3>NEWSLETTER</h3>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+          send you spam or pass on your email address</p>
+        <div>
+          <!-- <form method="post" action="traitement.php>" -->
+          <input type="text" class="input" placeholder="">
+          <button class="footer_container_newsletter_button">
+            Subscribe
+          </button>
+        </div>
+      </section>
+    </div>
   </footer>
 </body>
 
 </html>
+<!--<section class="footer_attribution">
+  <p class="footer_attribution_p">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </p>
+</section>
+<div class="footer-contact">
+        <span class="awesome-font-footer"><i class="fa-brands fa-square-facebook"></i></span>
+        <span class="awesome-font-footer"><i class="fa-brands fa-instagram"></i></span>
+        <span class="awesome-font-footer"><i class="fa-brands fa-square-twitter"></i></span>
+      </div>
+    -->

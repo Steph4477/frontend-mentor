@@ -1,10 +1,10 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  max-width: 1400px;
-  margin: 0 auto;
+body {
   font-family: "Poppins", sans-serif;
   color: hsl(192, 100%, 9%);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
 }
 
 h3 {
@@ -15,28 +15,24 @@ h2 {
   font-size: 50px;
 }
 
-p {
+p,
+a {
+  font-size: 16px;
+  text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
 
 .header {
   margin-top: 5vh;
-  width: 90%;
+  justify-content: center;
 }
 .header_navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-}
-.header_navbar_image {
-  width: 80%;
-}
-.header_navbar_image_logo {
-  width: 20%;
 }
 .header_navbar_button,
-.header_navbar .main_ {
+.header_navbar .main {
   width: 12%;
   border-radius: 50px;
   border: 2px solid hsl(321, 100%, 78%);
@@ -51,39 +47,53 @@ p {
 
 .block {
   margin-top: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .block_title {
   font-size: 40px;
   text-align: center;
 }
-.block_button {
-  margin-top: 5vh;
-  height: 40px;
+.block_p {
+  margin-top: 10vh;
+  text-align: center;
+  width: 50%;
+}
+.block_b {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 15%;
-  text-align: center;
+}
+.block_b_button {
+  width: 40%;
+  margin-top: 10vh;
+  height: 60px;
   background-color: hsl(322, 100%, 66%);
   border: none;
   border-radius: 50px;
+  font-size: 25px;
   color: white;
 }
 
-.imgDisplay {
+.main_image {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 15vh;
 }
-
 .main_article {
   margin-top: 5vh;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
-.main_collumn img {
-  max-width: 100%;
+.main_article_icone {
+  width: 50%;
+  text-align: center;
+}
+.main_article_message {
+  width: 50%;
+  text-align: center;
 }
 .main_collumn_article {
   margin-top: -1vh;
@@ -98,26 +108,105 @@ p {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .main_collumn_article_text_content h3,
 .main_collumn_article_text_content p {
+  margin-top: 5vh;
   text-align: left;
-  width: 80%;
+  width: 60%;
 }
 .main_collumn_article_image {
   width: 40%;
   display: flex;
+  justify-content: center;
 }
 .main_collumn_article_image img {
   max-width: 70%;
 }
 
-/* Feel free to remove these styles or customise in your own stylesheet 👍 */
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.wave {
+  margin-top: 15vh;
+  width: 80%;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}/*# sourceMappingURL=style.css.map */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: -1vh;
+  background-color: hsl(192, 100%, 9%);
+  padding-bottom: 15vh;
+}
+.footer_container {
+  display: flex;
+  width: 80%;
+  text-align: left;
+}
+.footer_container_span {
+  width: 50%;
+}
+.footer_container_huddle, .footer_container_newsletter {
+  width: 50%;
+}
+.footer_container_huddle {
+  display: flex;
+  flex-direction: column;
+}
+.footer_container_huddle_img img {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer_container_huddle_phone, .footer_container_huddle_mail {
+  margin-top: 1vh;
+}
+.footer_container_huddle_phone img, .footer_container_huddle_mail img {
+  margin-right: 2vh;
+}
+.footer_container_huddle_RS {
+  width: 100%;
+  display: flex;
+}
+.footer_container_newsletter {
+  display: flex;
+  flex-direction: column;
+}
+.footer_container_newsletter div {
+  display: flex;
+}
+.footer_container_newsletter_button {
+  width: 30%;
+  border-radius: 15px;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  color: white;
+}
+.footer h3,
+.footer p,
+.footer a {
+  text-decoration: none;
+  width: 70%;
+  color: white;
+}
+.footer i {
+  font-size: 40px;
+  margin-top: 10vh;
+  margin-right: 3vh;
+  width: 10%;
+  color: white;
+}
+.footer input {
+  width: 70%;
+  height: 40px;
+  border-radius: 15px;
+  margin-right: 5vh;
+}
+
+/*&_attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+&_attribution a {
+    color: hsl(228, 45%, 44%);
+}*/
+/* Feel free to remove these styles or customise in your own stylesheet 👍 *//*# sourceMappingURL=style.css.map */
