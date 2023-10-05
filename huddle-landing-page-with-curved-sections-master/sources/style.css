@@ -121,15 +121,30 @@ a {
   .main_article {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
-.main_article_icone, .main_article_message {
-  width: 50%;
-  text-align: center;
+.main_article_col {
+  display: flex;
+  width: 100%;
 }
 @media screen and (max-width: 586px) {
-  .main_article_icone, .main_article_message {
-    width: 100%;
+  .main_article_col {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main_article_col_icone, .main_article_col_message {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 586px) {
+  .main_article_col_icone, .main_article_col_message {
+    text-align: left;
     margin-top: 10vh;
   }
 }
@@ -205,7 +220,7 @@ a {
 @media screen and (max-width: 586px) {
   .footer {
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 }
 .footer h3,
@@ -246,7 +261,7 @@ i {
 
 .footer_container {
   display: flex;
-  width: 80%;
+  width: 50%;
   align-items: center;
 }
 @media screen and (max-width: 586px) {
@@ -268,26 +283,45 @@ i {
 .footer_container_huddle {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 @media screen and (max-width: 586px) {
   .footer_container_huddle {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 15vh;
+  }
+}
+.footer_container_huddle_img {
+  width: 60%;
+}
+@media screen and (max-width: 586px) {
+  .footer_container_huddle_img {
+    width: 50%;
   }
 }
 .footer_container_huddle_img img {
   display: flex;
   justify-content: flex-start;
 }
-.footer_container_huddle_phone, .footer_container_huddle_mail {
+.footer_container_huddle_icone {
+  width: 60%;
+}
+@media screen and (max-width: 586px) {
+  .footer_container_huddle_icone {
+    width: 50%;
+  }
+}
+.footer_container_huddle_icone_phone, .footer_container_huddle_icone_mail {
   margin-top: 2vh;
 }
-.footer_container_huddle_phone img, .footer_container_huddle_mail img {
+.footer_container_huddle_icone_phone img, .footer_container_huddle_icone_mail img {
   margin-right: 2vh;
 }
 @media screen and (max-width: 586px) {
-  .footer_container_huddle_RS {
+  .footer_container_huddle_icone_RS {
     width: 45%;
   }
 }
@@ -297,7 +331,7 @@ i {
 }
 @media screen and (max-width: 586px) {
   .footer_container_newsletter {
-    width: 100%;
+    width: 90%;
     align-items: center;
     justify-content: center;
     margin-bottom: 5vh;
@@ -310,19 +344,19 @@ i {
   .footer_container_newsletter_form {
     display: flex;
     flex-direction: column;
+    width: 50%;
   }
 }
-.footer_container_newsletter_form_button {
+.footer_container_newsletter_form_div_button {
   justify-content: flex-end;
   margin-top: 5vh;
-  width: 30%;
   border-radius: 15px;
   background-color: hsl(322, 100%, 66%);
   border: none;
   color: white;
 }
 @media screen and (max-width: 586px) {
-  .footer_container_newsletter_form_button {
+  .footer_container_newsletter_form_div_button {
     height: 40px;
     width: 100px;
     display: flex;

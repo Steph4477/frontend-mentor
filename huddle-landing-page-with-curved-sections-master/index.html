@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" type="text/css" href="sources/normalize.css">   
+  <link rel="stylesheet" type="text/css" href="sources/normalize.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- font title -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +14,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <!-- font paragraphe -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./sources/style.css">
   <!-- bibli awesome icone-->
   <script src="https://kit.fontawesome.com/7bbbf8beb9.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
+
 <body>
   <header class="header">
     <div class="header_navbar">
@@ -47,16 +51,18 @@
       <img src="./images/screen-mockups.svg" alt="draw responsive design loading">
     </div>
     <div class="main_article">
-      <article class="main_article_icone">
-        <img src="./images/icon-communities.svg" alt="icon communities">
-        <h2>1.4k+</h2>
-        <p>Communities Formed</p>
-      </article>
-      <article class="main_article_message">
-        <img src="./images/icon-messages.svg" alt="icon messages">
-        <h2>2.7m+</h2>
-        <p>Messages Sent</p>
-      </article>
+      <div class="main_article_col">
+        <article class="main_article_col_icone">
+          <img src="./images/icon-communities.svg" alt="icon communities">
+          <h2>1.4k+</h2>
+          <p>Communities Formed</p>
+        </article>
+        <article class="main_article_col_message">
+          <img src="./images/icon-messages.svg" alt="icon messages">
+          <h2>2.7m+</h2>
+          <p>Messages Sent</p>
+        </article>
+      </div>
     </div>
     <div class="main_collumn">
       <img src="./images/bg-section-top-desktop-1.svg" alt="background wave">
@@ -125,33 +131,39 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
           vestibulum a, ultrices quis sem.
         </p>
-        <div class="footer_container_huddle_phone">
-          <img src="./images/icon-phone.svg" alt="icone phone">
-          <a href="tel:+15431234567">Phone: +1-543-123-4567</a>
-        </div>
-        <div class="footer_container_huddle_mail">
-          <img src="./images/icon-email.svg" alt="icone email">
-          <a href="mailto:example@huddle.com">example@huddle.com</a>
-        </div>
-        <div class="footer_container_huddle_RS">        
-            <i class="fa-brands fa-square-facebook"></i>         
-            <i class="fa-brands fa-square-instagram"></i>        
+        <div class="footer_container_huddle_icone">
+          <div class="footer_container_huddle_icone_phone">
+            <img src="./images/icon-phone.svg" alt="icone phone">
+            <a href="tel:+15431234567">Phone: +1-543-123-4567</a>
+          </div>
+          <div class="footer_container_huddle_icone_mail">
+            <img src="./images/icon-email.svg" alt="icone email">
+            <a href="mailto:example@huddle.com">example@huddle.com</a>
+          </div>
+          <div class="footer_container_huddle_icone_RS">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
             <i class="fa-brands fa-square-x-twitter"></i>
+          </div>
         </div>
       </div>
-      <section class="footer_container_newsletter">
-        <h3>NEWSLETTER</h3>
-        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-          send you spam or pass on your email address</p>
-        <div class="footer_container_newsletter_form">
-          <!-- <form method="post" action="traitement.php>" -->
-          <input type="text" class="input" placeholder="">
-          <button class="footer_container_newsletter_form_button">
+    </div>
+    <section class="footer_container_newsletter">
+      <h3>NEWSLETTER</h3>
+      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+        send you spam or pass on your email address</p>
+      <div class="footer_container_newsletter_form">
+        <!-- <form method="post" action="traitement.php>" -->
+        <input type="text" class="input" placeholder="">
+        <div class="footer_container_newsletter_form_div">
+          <button class="footer_container_newsletter_form_div_button">
             Subscribe
           </button>
         </div>
-      </section>
+      </div>
+    </section>
     </div>
   </footer>
-  </body>
+</body>
+
 </html>
